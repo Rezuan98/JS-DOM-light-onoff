@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>light</title>
+</head>
+<body>
+    <img src="bulboff.jpg" id="bulboff1" alt="" height="200px;" width="150px;">
+    <img src="bulboff.jpg" id="bulboff2" alt="" height="200px;" width="150px;">
+    <img src="bulboff.jpg" id="bulboff3" alt="" height="200px;" width="150px;"><br><br><br>
+
+    <button onclick="myfun(1)">On</button>
+    <button onclick="myfun(0)">Off</button>
+
+    <script>
+    // with loop
+         function myfun(x){
+             var pic="";
+             for(i=1;i<=3;i++)
+        {
+             if(x==1){
+               pic="bulbon.jpg";
+             }
+            else{
+                 pic="bulboff.jpg";
+             }
+             var bulboff=document.getElementById("bulboff"+(i));
+
+             bulboff.src=pic;
+         }
+
+          }
+        // without loop
+        //  var bulboff=document.getElementById("bulboff1");
+        //  function myfun(x){
+        //     if(x==1){
+        //         bulboff1.src="bulbon.jpg";
+        //          bulboff2.src="bulbon.jpg";
+        //          bulboff3.src="bulbon.jpg";
+        //      }
+        //      else{
+        //          bulboff1.src="bulboff.jpg";
+        //          bulboff2.src="bulboff.jpg";
+        //          bulboff3.src="bulboff.jpg";
+        //      }
+        //  } 
+        // with loop
+         
+        
+
+    </script>
+</body>
+</html>
